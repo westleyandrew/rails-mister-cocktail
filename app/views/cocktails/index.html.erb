@@ -1,14 +1,14 @@
 <h1>Yummy Cocktails</h1>
 
-<div class="container">
+<div class="container d-flex space-between">
 
 <% @cocktails.each do |cocktail| %>
 
 <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
-    <p class="card-text">Get drunk quick</p>
     <p><%= cl_image_tag cocktail.photo, height: 150, width: 200, crop: :fill %></p>
+    <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
+    <p class="card-text">A refereshing tipple</p>
   </div>
 </div>
 
@@ -16,4 +16,4 @@
 
 </div>
 
-<h2><%= link_to "Add a new cocktail", new_cocktail_path %></h2>
+<h1><%= link_to "Add a new cocktail", new_cocktail_path %></h2>
