@@ -2,3 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.center_div {
+    margin: 0 auto;
+    width:40%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.btn-add-cocktail {
+  background-color: #FCE75A;
+  color: black;
+}
+
+.btn-add-cocktail a {
+  background-color: #FCE75A;
+  color: black;
+}
+
+.btn-add-cocktail a:hover {
+  background-color: #FCE75A;
+  color: white;
+}
+
+.center_div_show {
+    margin: 0 auto;
+    width:40%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}

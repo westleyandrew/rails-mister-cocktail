@@ -1,5 +1,12 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container center_div">
+  <h3>Add your cocktail ingredients</h3>
+  <div class="row"></div>
+    <div class="booking-form new-cocktail" >
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <button type="button" class="btn btn-add-cocktail"> <%= f.button :submit %> </button>
+      <% end %>
+    </div>
+  </div>
+</div>
